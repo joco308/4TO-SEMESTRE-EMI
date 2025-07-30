@@ -12,6 +12,16 @@ public class Principal
 
         miObjeto.mostrar();
 
-        
+        Lista lista = new Lista(new Nodo(3));
+
+        lista.add_list(new Nodo(1.13));
+
+        lista.print_list();
+
+        lista.add_list(new Nodo(40000));
+
+        lista.add_list(new Nodo(1.5f));
+
+        lista.print_list();
     }
 }
