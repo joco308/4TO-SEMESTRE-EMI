@@ -1,0 +1,2 @@
+# Dirección MAC
+# Dirección IP
