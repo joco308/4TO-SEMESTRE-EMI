@@ -1,5 +1,4 @@
 # INTRO
 ## Notas
-- Cara
-- Sopa
-- Ingredientes
+- Cuenta con los soldados `MÁS ENTRENADOS`
+- 
