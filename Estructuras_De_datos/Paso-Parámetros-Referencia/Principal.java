@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class Principal {
 	public static void limpiarBuffer(Scanner sc) {
         if (sc.hasNextLine()) {
