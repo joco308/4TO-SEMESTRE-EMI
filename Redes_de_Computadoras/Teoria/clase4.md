@@ -13,3 +13,25 @@ Pasos:
 
 ### Es una Direccion Host
 
+#### Clase A 1.0.0.0 - 126.255.255.255
+#### Clase B 128 - 192.255.255.255
+#### Clase C 192.0.0.0 - 223.255.255.255
+
+* Estas se clasifican en privadas y publicas
+
+## Direciones de enlace local
+Aparecen cuando no se pudo optener una direcion ip del ruter
+ 
+# Asignasion de ip
+la IANA asigna un bloque de direcciones ip a lugares del mundo
+
+## ISP (Internet services probailbe)
+El probedor de servicios de intenet el que te asigna un ip publica a tu ruter
+
+# IPv6
+Crear mas ip en el caso de que se acaben que de echo esta pasando 
+tiene 128 bits de transmicion para mejorar las capacidades de direccionamiento y mecansmo de seguridad
+se expresa en formato exadecimal
+
+## ICMP 
+protocolo mensajeria para el conjunto de aplicaciones TCP/IP proporciona enajes de importancia y algunos datos
