@@ -14,6 +14,12 @@ public class ListaEnlazada {
         ptr.ptr = nodo;
     }
 
+    void añadir_datos_inicio(int date){
+        Nodo arr = new Nodo(date);
+        arr.ptr = this.nodoFrist;
+        this.nodoFrist = arr;
+    }
+
     void mostrar_datos(){
         Nodo ptr = this.nodoFrist;
         while (ptr != null) {
@@ -21,7 +27,44 @@ public class ListaEnlazada {
             ptr=ptr.ptr;
         }
         System.out.println("null");
+    }
 
+    void quitar_dato(int date){
+        Nodo arr = this.nodoFrist;
+        if (arr.date == date) {
+            this.nodoFrist = arr.ptr;
+        }else{
+            while (arr.ptr.date != date) {
+                arr = arr.ptr;
+            }
+            arr.ptr = arr.ptr.ptr;
+        }
+    }
+
+    int buscar_por_dato(int dato){
+        int count = 0;
+        Nodo arr = this.nodoFrist;
+        while (arr.date != dato) {
+            arr = arr.ptr;
+            count++;
+        }
+        if (arr == null){
+            return -1;
+        }else{
+            return count;
+        }
+    }
+
+    Integer buscar_por_pocicion(int date){
+        Nodo arr = this.nodoFrist;
+        for(int i = 0 ; i<=date; i++){
+            arr = arr.ptr;
+        }
+        if(arr==null){
+            return null;
+        }else{
+            return arr.date;
+        }
     }
     
 }
