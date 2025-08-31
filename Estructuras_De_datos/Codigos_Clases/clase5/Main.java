@@ -10,7 +10,7 @@ public class Main
         int add;
 
         do{
-            System.out.println("\t|MENU|\n1. Agragar dato al inicio\n2. Agragar dato al final\n3. Mostrar\n4. Eliminar dato\n5. Buscar nodo por dato\n6. Buscar por posicion\n7. Salir");
+            System.out.println("\t|MENU|\n1. Agragar dato al inicio\n2. Agragar dato al final\n3. Mostrar\n4. Eliminar dato\n5. Buscar nodo por dato\n6. Buscar por posicion\n7. Agregar por pocicion\n8. Salir");
             System.out.print("Ingrese la opcion: ");
             opcion = sc.nextInt();
             switch (opcion) {
@@ -49,12 +49,20 @@ public class Main
                     System.out.print("Ingrese el dato a eliminar: ");
                     add = sc.nextInt();
                     System.out.println("El dato es: "+ lista.buscar_por_pocicion(add));
+                    break;
+                case 7:
+                    System.out.println("Ingrese el nuevo dato del nodo: ");
+                    add = sc.nextInt();
+                    System.out.println("Ingrese el la pos: ");
+                    int add_1 = sc.nextInt();
+                    lista.agregar_pos(add, add_1);
+                    break;
                 default:
                     System.out.println("Esa opcion no es valida");
                     break;
             }
 
-        }while(opcion!=7);
+        }while(opcion<=8);
     }
     
 
